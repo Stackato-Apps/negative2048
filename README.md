@@ -1,9 +1,3 @@
-# Original 2048
-Find the original game [here](http://git.io/2048).
-A small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
-
-Made just for fun. [Play it here!](http://gabrielecirulli.github.io/2048/)
-
 # Negative 2048 (or just -2048)
 Inspired partially by [@tef](http://twitter.com/tef)'s [0](http://tef.github.io/0/)
 
@@ -12,8 +6,6 @@ Inspired partially by [@tef](http://twitter.com/tef)'s [0](http://tef.github.io/
 - Opposite tiles combine to form a zero tile. The zero tile can combine with any tile.
 - The sign of the tile (whether it is a 2 or -2) is determined by a percentage defined at the beginning of the game. So, the percentage of positive tiles will be between 35% and 65%.
 - A 2048 or -2048 tile will "win" the game. 
-
-
 
 ### Contributions
  - [gabrielecirulli](https://github.com/gabrielecirulli/) created the original game
@@ -29,3 +21,9 @@ Many thanks to [rayhaanj](https://github.com/rayhaanj), [Mechazawa](https://gith
 
 ## Donations
 I made this for fun / practice in my spare time. If you really enjoyed it and think it's worth money, please consider donating some BTC: 1CbtwY45bgbJ5WMi5RuAT7JpWPaFUw7bT1
+
+# Original 2048
+Find the original game [here](http://git.io/2048).
+A small clone of [1024](https://play.google.com/store/apps/details?id=com.veewo.a1024), based on [Saming's 2048](http://saming.fr/p/2048/) (also a clone).
+
+Made just for fun. [Play it here!](http://gabrielecirulli.github.io/2048/)

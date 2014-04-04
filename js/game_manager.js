@@ -177,7 +177,8 @@ GameManager.prototype.move = function (direction) {
           tile.updatePosition(positions.next);
 
           // Update the score
-          self.score += Math.abs(merged.value);
+          if (next.value === tile.value*-1) self.score += Math.abs(tile.value*2); //A cancellation gives points as if they were equal tiles 
+          else self.score += Math.abs(merged.value);
 
           // The mighty 2048 tile
           if (Math.abs(merged.value) === 2048) self.won = true;

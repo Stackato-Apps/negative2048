@@ -5,8 +5,6 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.actuator       = new Actuator;
 
   this.startTiles     = 2;
-  
-  console.log(this.percentPositive);
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -64,6 +62,7 @@ GameManager.prototype.setup = function () {
 
   // Update the actuator
   this.actuate();
+  console.log(this.percentPositive);
 };
 
 // Set up the initial tiles to start the game with

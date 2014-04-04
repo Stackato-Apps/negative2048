@@ -8,6 +8,8 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   
   this.percentPositive = (0.5*Math.random()-0.25)+0.5; //Percent spawning of +2's
 
+  console.log(this.percentPositive);
+
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
   this.inputManager.on("keepPlaying", this.keepPlaying.bind(this));

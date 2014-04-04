@@ -6,8 +6,6 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
 
   this.startTiles     = 2;
   
-  this.percentPositive = (0.5*Math.random()-0.25)+0.5; //Percent spawning of +2's
-
   console.log(this.percentPositive);
 
   this.inputManager.on("move", this.move.bind(this));
@@ -58,6 +56,7 @@ GameManager.prototype.setup = function () {
     this.over        = false;
     this.won         = false;
     this.keepPlaying = false;
+    this.percentPositive = (0.5*Math.random()-0.25)+0.5; //Percent spawning of +2's
 
     // Add the initial tiles
     this.addStartTiles();

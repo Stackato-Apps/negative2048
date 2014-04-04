@@ -54,7 +54,7 @@ GameManager.prototype.setup = function () {
     this.over        = false;
     this.won         = false;
     this.keepPlaying = false;
-    this.percentPositive = (0.5*Math.random()-0.25)+0.5; //Percent spawning of +2's
+    this.percentPositive = (0.3*Math.random()-0.15)+0.5; //Percent spawning of +2's
 
     // Add the initial tiles
     this.addStartTiles();

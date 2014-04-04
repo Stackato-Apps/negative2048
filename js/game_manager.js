@@ -62,7 +62,7 @@ GameManager.prototype.setup = function () {
 
   // Update the actuator
   this.actuate();
-  console.log(this.percentPositive);
+  console.log("Percent Positive: "+this.percentPositive);
 };
 
 // Set up the initial tiles to start the game with

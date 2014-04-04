@@ -1,7 +1,11 @@
 # Negative 2048 (or just -2048)
+Play it [here](http://undeadpenguin.com/negative-2048)!
+
+http://undeadpenguin.com/negative or http://undeadpenguin.com/- also point there if you want a bit simpler URL.
+
 Inspired partially by [@tef](http://twitter.com/tef)'s [0](http://tef.github.io/0/)
 
-- 2048 is very similar to the 2048 you know and love. However, along with 2's spawning on the board, -2's can spawn as well. 
+- -2048 is very similar to the 2048 you know and love. However, along with 2's spawning on the board, -2's can spawn as well. 
 - Two tiles with the same or opposite values will combine. Tiles with equal values add together as one would expect. 
 - Opposite tiles combine to form a zero tile. The zero tile can combine with any tile.
 - The sign of the tile (whether it is a 2 or -2) is determined by a percentage defined at the beginning of the game. So, the percentage of positive tiles will be between 35% and 65%.

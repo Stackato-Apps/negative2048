@@ -5,6 +5,8 @@ function GameManager(size, InputManager, Actuator, StorageManager) {
   this.actuator       = new Actuator;
 
   this.startTiles     = 2;
+  
+  this.percentPositive = (0.5*Math.random()-0.25)+0.5; //Percent spawning of +2's
 
   this.inputManager.on("move", this.move.bind(this));
   this.inputManager.on("restart", this.restart.bind(this));
@@ -47,6 +49,7 @@ GameManager.prototype.setup = function () {
     this.over        = previousState.over;
     this.won         = previousState.won;
     this.keepPlaying = previousState.keepPlaying;
+    this.percentPositive = previousState.percentPositive;
   } else {
     this.grid        = new Grid(this.size);
     this.score       = 0;
@@ -72,7 +75,7 @@ GameManager.prototype.addStartTiles = function () {
 // Adds a tile in a random position
 GameManager.prototype.addRandomTile = function () {
   if (this.grid.cellsAvailable()) {
-    var value = Math.random() < 0.5 ? 2 : -2;
+    var value = Math.random() < this.percentPositive ? 2 : -2;
     var tile = new Tile(this.grid.randomAvailableCell(), value);
 
     this.grid.insertTile(tile);

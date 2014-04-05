@@ -270,7 +270,7 @@ GameManager.prototype.tileMatchesAvailable = function () {
 
           var other  = self.grid.cellContent(cell);
 
-          if (other && (Math.abs(other.value) === Math.abs(tile.value)) || other.value === 0 || tile.value == 0) {
+          if (other && (Math.abs(other.value) === Math.abs(tile.value)) || other.value === 0) {
             return true; // These two tiles can be merged
           }
         }

@@ -11,7 +11,7 @@ Inspired partially by [@tef](http://twitter.com/tef)'s [0](http://tef.github.io/
 - The sign of the tile (whether it is a 2 or -2) is determined by a percentage defined at the beginning of the game. So, the percentage of positive tiles will be between 35% and 65%.
 - A 2048 or -2048 tile will "win" the game. 
 
-## Deploying on Stackato
+## Deploying on HPE Helion Stackato
 
 ```
 stackato push -n

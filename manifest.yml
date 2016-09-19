@@ -1,4 +1,5 @@
 applications:
 - name: negative2048
-  buildpack: https://github.com/hpcloud/staticfile-buildpack.git#custom-404
+  buildpack: https://github.com/cloudfoundry/staticfile-buildpack
   memory: 32M
+  stack: cflinuxfs2
